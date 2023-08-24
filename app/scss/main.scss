@@ -215,3 +215,46 @@ a {
     }
   }
 }
+
+.testimonials {
+  
+  h3 {
+    margin: 10% 0 6%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Fraunces";
+    font-weight: 900;
+    letter-spacing: 5px;
+    color: $grayish_blue_color;
+  }
+
+  .flex_container {
+    width: 25%;
+    text-align: center;
+
+    &:nth-child(2) {
+      padding: 0 20px;
+    }
+
+    img {
+      margin-bottom: 40px;
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    p {
+      color: $very_dark_grayish_blue_color;
+      margin-bottom: 80px;
+    }
+
+    h4 {
+      color: $very_dark_desaturated_blue_color;
+
+      span {
+        display: block;
+        margin-top: 20px;
+        color: $grayish_blue_color;
+      }
+    }
+  }
+}

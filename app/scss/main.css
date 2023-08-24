@@ -210,4 +210,38 @@ a {
 }
 .intro .grid .img_photography h2, .intro .grid .img_photography p {
   color: hsl(198, 62%, 26%);
+}
+
+.testimonials h3 {
+  margin: 10% 0 6%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Fraunces";
+  font-weight: 900;
+  letter-spacing: 5px;
+  color: hsl(210, 4%, 67%);
+}
+.testimonials .flex_container {
+  width: 25%;
+  text-align: center;
+}
+.testimonials .flex_container:nth-child(2) {
+  padding: 0 20px;
+}
+.testimonials .flex_container img {
+  margin-bottom: 40px;
+  width: 60px;
+  border-radius: 50%;
+}
+.testimonials .flex_container p {
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 80px;
+}
+.testimonials .flex_container h4 {
+  color: hsl(212, 27%, 19%);
+}
+.testimonials .flex_container h4 span {
+  display: block;
+  margin-top: 20px;
+  color: hsl(210, 4%, 67%);
 }/*# sourceMappingURL=main.css.map */
