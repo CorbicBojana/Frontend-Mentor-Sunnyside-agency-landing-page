@@ -317,9 +317,47 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 40px 20px;
   }
   .header .flex .nav {
     display: none;
+  }
+  .header .flex .active {
+    display: inline-block;
+    position: absolute;
+    top: 14%;
+    left: 20px;
+    right: 20px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .header .flex .active::after {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid hsl(0, 0%, 100%);
+  }
+  .header .flex .active .nav_list {
+    display: inline-block;
+    margin: 40px;
+  }
+  .header .flex .active .nav_list .nav_list_item {
+    margin: 0 0 20px;
+  }
+  .header .flex .active .nav_list .nav_list_item:last-child {
+    margin: 0;
+  }
+  .header .flex .active .nav_list .nav_list_item .nav_list_item_link {
+    color: hsl(210, 4%, 67%);
+  }
+  .header .flex .active .nav_list .nav_list_item .btn {
+    background-color: hsl(51, 100%, 49%);
+    color: hsl(212, 27%, 19%);
   }
   .header .flex .nav_mobile {
     display: inline-block;

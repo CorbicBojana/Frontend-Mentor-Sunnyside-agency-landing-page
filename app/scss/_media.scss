@@ -9,11 +9,57 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding: 40px 20px;
 
         .flex {
 
             .nav {
                 display: none;
+            }
+
+            .active {
+                display: inline-block;
+                position: absolute;
+                top: 14%;
+                left: 20px;
+                right: 20px;
+                background-color: $white_color;
+                text-align: center;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -30px;
+                    right: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 30px solid transparent;
+                    border-bottom: 30px solid transparent;
+                    border-right: 30px solid $white_color;
+                }
+
+                .nav_list {
+                    display: inline-block;
+                    margin: 40px;
+
+                    .nav_list_item {
+                        margin: 0 0 20px;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        .nav_list_item_link {
+                            color: $grayish_blue_color;
+                        }
+
+                        .btn {
+                            background-color: $yellow_color;
+                            color: $very_dark_desaturated_blue_color;
+                        }
+                    }
+                    
+                }
             }
     
             .nav_mobile {
