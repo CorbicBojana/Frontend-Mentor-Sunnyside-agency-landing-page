@@ -93,9 +93,11 @@ a {
   height: 10px;
   border-radius: 10px;
   z-index: -1;
+  opacity: 0.4;
 }
-.btn:hover {
+.btn:hover::after {
   cursor: pointer;
+  opacity: 1;
 }
 
 .container {
@@ -153,6 +155,9 @@ a {
 .header .flex .nav .nav_list .nav_list_item .btn:hover {
   background-color: hsl(198, 62%, 26%);
   color: hsl(0, 0%, 100%);
+}
+.header .flex .nav_mobile {
+  display: none;
 }
 .header h1 {
   text-align: center;
@@ -292,11 +297,80 @@ a {
   color: hsl(168, 34%, 41%);
 }
 .footer .list .list_item .list_item_link:hover {
+  cursor: pointer;
   color: hsl(0, 0%, 100%);
 }
 .footer .social_media img {
   margin-left: 20px;
 }
 .footer .social_media img:hover {
+  cursor: pointer;
   filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    background: url(../../dist/img/mobile/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header .flex .nav {
+    display: none;
+  }
+  .header .flex .nav_mobile {
+    display: inline-block;
+  }
+  .header .flex .nav_mobile:hover {
+    cursor: pointer;
+  }
+  .header h1 {
+    margin-top: 120px;
+  }
+  .header .arrow {
+    top: 70%;
+  }
+  .intro .grid {
+    text-align: center;
+  }
+  .intro .grid .img_transform {
+    order: -1;
+  }
+  .intro .grid .img_graphic_design, .intro .grid .img_photography {
+    padding: 50%;
+  }
+  .testimonials .flex {
+    flex-direction: column;
+  }
+  .testimonials .flex .flex_container {
+    width: 100%;
+    margin-bottom: 80px;
+    padding: 0 40px;
+  }
+  .testimonials .flex .flex_container p {
+    margin-bottom: 40px;
+  }
+  .testimonials .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .testimonials .img_container .img_milkbottles {
+    background: url(../../dist/img/mobile/image-gallery-milkbottles.jpg);
+  }
+  .testimonials .img_container .img_orange {
+    background: url(../../dist/img/mobile/image-gallery-orange.jpg);
+  }
+  .testimonials .img_container .img_cone {
+    background: url(../../dist/img/mobile/image-gallery-cone.jpg);
+  }
+  .testimonials .img_container .img_sugarcubes {
+    background: url(../../dist/img/mobile/image-gallery-sugar-cubes.jpg);
+  }
+  .testimonials .img_container .img_milkbottles, .testimonials .img_container .img_orange, .testimonials .img_container .img_cone, .testimonials .img_container .img_sugarcubes {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }/*# sourceMappingURL=main.css.map */

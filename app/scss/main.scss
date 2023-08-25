@@ -52,10 +52,12 @@ a {
     height: 10px;
     border-radius: 10px;
     z-index: -1;
+    opacity: 0.4;
   }
 
-  &:hover {
+  &:hover::after {
     cursor: pointer;
+    opacity: 1;
   }
 }
 
@@ -125,6 +127,10 @@ a {
           }
         }
       }
+    }
+
+    .nav_mobile {
+      display: none;
     }
   }
 
@@ -314,6 +320,7 @@ a {
         color: $dark_moderate_cyan_color;
 
         &:hover {
+          cursor: pointer;
           color: $white_color;
         }
       }
@@ -326,8 +333,11 @@ a {
       margin-left: 20px;
 
       &:hover {
+        cursor: pointer;
         filter:  brightness(0) invert(1);
       }
     }
   }
 }
+
+@import "media";
