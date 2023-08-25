@@ -228,6 +228,10 @@ a {
     color: $grayish_blue_color;
   }
 
+  .flex {
+    margin-bottom: 10%;
+  }
+
   .flex_container {
     width: 25%;
     text-align: center;
@@ -254,6 +258,75 @@ a {
         display: block;
         margin-top: 20px;
         color: $grayish_blue_color;
+      }
+    }
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .img_container {
+    height: 480px;
+
+    .img_milkbottles {
+      background: url(../../dist/img/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    .img_orange {
+      background: url(../../dist/img/desktop/image-gallery-orange.jpg);
+    }
+
+    .img_cone {
+      background: url(../../dist/img/desktop/image-gallery-cone.jpg);
+    }
+
+    .img_sugarcubes {
+      background: url(../../dist/img/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    .img_milkbottles, .img_orange, .img_cone, .img_sugarcubes {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.footer {
+  padding: 10%;
+  text-align: center;
+  background-color: rgba($dark_desaturated_cyan_color, .5);
+
+  .logo {
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    margin-bottom: 50px;
+
+    .list_item {
+      margin-left: 30px;
+      
+      .list_item_link {
+        display: inline-block;
+        color: $dark_moderate_cyan_color;
+
+        &:hover {
+          color: $white_color;
+        }
+      }
+    }
+  }
+
+  .social_media {
+
+    img {
+      margin-left: 20px;
+
+      &:hover {
+        filter:  brightness(0) invert(1);
       }
     }
   }

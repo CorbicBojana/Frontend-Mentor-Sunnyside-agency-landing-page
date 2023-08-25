@@ -221,6 +221,9 @@ a {
   letter-spacing: 5px;
   color: hsl(210, 4%, 67%);
 }
+.testimonials .flex {
+  margin-bottom: 10%;
+}
 .testimonials .flex_container {
   width: 25%;
   text-align: center;
@@ -244,4 +247,56 @@ a {
   display: block;
   margin-top: 20px;
   color: hsl(210, 4%, 67%);
+}
+.testimonials .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+.testimonials .img_container {
+  height: 480px;
+}
+.testimonials .img_container .img_milkbottles {
+  background: url(../../dist/img/desktop/image-gallery-milkbottles.jpg);
+}
+.testimonials .img_container .img_orange {
+  background: url(../../dist/img/desktop/image-gallery-orange.jpg);
+}
+.testimonials .img_container .img_cone {
+  background: url(../../dist/img/desktop/image-gallery-cone.jpg);
+}
+.testimonials .img_container .img_sugarcubes {
+  background: url(../../dist/img/desktop/image-gallery-sugarcubes.jpg);
+}
+.testimonials .img_container .img_milkbottles, .testimonials .img_container .img_orange, .testimonials .img_container .img_cone, .testimonials .img_container .img_sugarcubes {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer {
+  padding: 10%;
+  text-align: center;
+  background-color: rgba(37, 86, 75, 0.5);
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.footer .list {
+  margin-bottom: 50px;
+}
+.footer .list .list_item {
+  margin-left: 30px;
+}
+.footer .list .list_item .list_item_link {
+  display: inline-block;
+  color: hsl(168, 34%, 41%);
+}
+.footer .list .list_item .list_item_link:hover {
+  color: hsl(0, 0%, 100%);
+}
+.footer .social_media img {
+  margin-left: 20px;
+}
+.footer .social_media img:hover {
+  filter: brightness(0) invert(1);
 }/*# sourceMappingURL=main.css.map */
